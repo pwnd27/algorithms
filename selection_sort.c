@@ -1,9 +1,8 @@
 #include "stdio.h"
-#include <iso646.h>
 
 #define SIZE 6
 
-void selectionSort(int *arr, int size){
+void selection_sort(int *arr, int size){
     int min, min_index, temp, i, j;
     for (i = 0; i < size; i++){
         min = arr[i];
@@ -27,7 +26,7 @@ void selectionSort(int *arr, int size){
 int main(void){
     int a[SIZE] = {-3, 5, 0, -8, 1, 10};
     int *p_arr = a;
-    selectionSort(p_arr, SIZE);
+    selection_sort(p_arr, SIZE);
     int i;
     for (i = 0; i < SIZE; i++){
         printf("%d ", a[i]);
